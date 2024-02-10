@@ -1,0 +1,462 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: #000;
+}
+
+main {
+    padding-left: 120px;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    color: #757575;
+}
+
+/* ------ navbar ------ */
+
+.navbar {
+    background-color: #222;
+    position: fixed;
+    top: 0;
+    height: 100%;
+    max-width: 120px;
+}
+
+.navbar img {
+    width: 100%;
+    display: block;
+}
+
+.navbar__content {
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar__item {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    padding: 12px 24px;
+    text-decoration: none;
+}
+
+.navbar__item span {
+    color: #fff;
+    font-size: 12px;
+}
+
+.navbar__item i {
+    color: #fff;
+    font-size: 36px;
+}
+
+.navbar__item:hover {
+    background-color: #000;
+}
+
+.navbar__item-active{
+    background-color: #000;
+}
+
+.navbar__item-active:hover{
+    background-color: #ccc;
+}
+
+.navbar__item-active:hover i, 
+.navbar__item-active:hover span{
+    color: #000;
+}
+
+/* ---  header  ---- */
+
+.header {
+    padding-top: 60px;
+    text-align: center;
+    color: #fff;
+}
+
+.header h1 {
+    margin: 10px 0;
+    font-size: 64px;
+}
+
+.header h4 {
+    margin: 15px 0;
+    font-size: 15px;
+}
+
+.header img{
+    width: 100%;
+    display: block;
+}
+
+/* ----  main  ----- */
+
+.main, .header, .footer {
+    margin-left: 120px;
+    padding: 0 16px ;
+}
+
+.container {
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+/* -------- section about    ---------*/
+
+.post {
+    margin: 20px 0;
+    padding: 64px 0;
+}
+
+.post__header {
+    margin-bottom: 16px;
+}
+
+.post__title {
+    color: #fff;
+    font-size: 30px;
+    margin: 10px 0;
+}
+
+.post__desc {
+    margin: 8px 0;
+    text-align: justify;
+}
+
+.post__border {
+    max-width: 200px;
+}
+
+.post__content h3 {
+    color: #fff;
+    font-size: 24px;
+    margin: 10px 0;
+    padding: 16px 0;
+}
+
+
+.about>.item h3 {
+    margin: 10px 0;
+    padding: 24px 0;
+}
+
+.w-95 {
+    width: 95%;
+}
+
+.w-85 {
+    width: 85%;
+}
+
+.w-75 {
+    width: 75%;
+}
+
+.about .skills {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.about .skills > .item h6 {
+    margin-bottom: 8px;
+    font-size: 15px;
+    letter-spacing: 4px;
+    color: #757575;
+}
+
+.about .skills > .item > div {
+    background-color: #fff;
+    height: 28px;
+}
+
+.about .skills > .item > div > div {
+    height: 100%;
+    background-color: gray;
+}
+
+.about .done {
+    display: flex;
+    background-color: #fff;
+    padding: 16px 0;
+}
+
+.about .done > .item {
+    width: 25%;
+    padding: 16px 0;
+    text-align: center;
+}
+
+.about .done > .item h4 {
+    color: #000;
+}
+
+.about .done > .item p {
+    color: #000;
+}
+
+.about .tariff {
+    display: flex;
+    gap: 10px;
+}
+
+.about .tariff > .item {
+    width: 50%;
+    background-color: #fff;
+    opacity: 0.4;
+}
+
+.about .tariff > .item:hover {
+    opacity: 1;
+}
+
+.about .tariff > .item li:first-child {
+    padding: 16px 0;
+    background-color: #f2f2f2;
+}
+
+.about .tariff>.item li {
+    padding: 8px 0;
+    color: #000;
+    text-align: center;
+}
+
+/*-----  sections -------- */
+
+.skills__button,
+.form__button {
+    background-color: #f1f1f1;
+    margin: 15px 0;
+    padding: 12px 24px;
+    font-size: 15px;
+    display: inline-block;
+}
+
+.form__button:hover,
+.skills__button:hover,
+.tarif__button:hover {
+cursor: pointer;
+}
+
+/* ------- section price ----- */
+
+.wrap-tarif, .wrap-photos {
+    display: flex;
+    gap: 16px;
+}
+
+.tarif-block, .photos-block {
+    width: 50%; 
+}
+                  
+.tarif-block ul {
+    list-style: none;
+    text-align: center;
+}
+
+.tarif-block {
+    opacity: 0.6;
+}
+
+.tarif-block:hover {
+    opacity: 1;
+}
+
+
+.container__price .item-header {
+    padding: 32px 16px;
+    background-color: #414141;
+    font-size: 24px;
+    color: #939393;
+}
+
+.container__price .item {
+    text-decoration: none;
+    background-color: #939393;
+    padding: 16px;
+    border-bottom: 1px solid #61616180;
+    font-size: 15px;
+}
+
+.item-price > h2 {
+   color:#000;
+   font-weight: 400;
+}
+
+.container__price .item-end {
+    background-color: #797979;
+}
+
+.item-end > button {
+    padding: 12px 24px;
+    margin: 24px 0;
+    border: none;
+    background-color: #939393;
+}
+
+.item-end > button:hover{
+background-color: #000;
+color: #fff;
+cursor: pointer;
+}
+
+
+/* ----  reputation ----- */
+
+.reputation {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.reputation .item {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.reputation .item img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: block;
+}
+
+/* ------ section my photos ------ */
+
+.container__photos img {
+    margin: 0 0 12px;
+    width: 100%;
+    gap: 12px;
+}
+
+.wrap-photos {
+    gap: 12px;
+    padding: 0 8px;
+}
+
+/* ------ section contacts ------ */
+
+.contact-icon {
+    margin: 16px 0 36px 0;
+}
+    
+.contact-icon p, .name-of-form {
+    margin: 15px 0;
+    font-size: 15px;
+    color: #757575;
+}
+
+.contact-icon i {
+    color: #fff;
+    font-size: 30px;
+    margin-right: 16px;
+}
+
+.user-message {
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.user-message input {
+padding: 16px 8px;
+margin: 10px 0;
+color: #757575
+}
+
+.user-message button {
+    align-self: flex-start
+}
+
+.user-message input:active {
+border-radius: 5px;
+}
+
+/* ---- footer ---- */
+
+.footer {
+    color: #757575;
+    padding: 64px 0;
+}
+
+.footer .icon-wrapper > ul {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer .icon-wrapper > i {
+   gap: 5px;
+   margin-right: 5px;
+}
+
+.footer p {
+    margin-top: 15px;
+}
+
+.footer i {
+    font-size: 24px;
+    padding: 3px;
+}
+
+.footer i:hover {
+    cursor: pointer;
+}
+
+/*   ----   media   --- */
+
+@media (max-width: 576px){
+    .navbar{
+        max-width: none;
+        height: auto;
+        width: 100%;
+    }
+
+    .navbar img {
+        display: none;
+    }
+
+    .navbar__content{ 
+        flex-direction: row;
+    }
+
+    .navbar__content li {
+        width: 25%;
+    }
+
+    .navbar__item i {
+        display: none;
+    }
+
+    .main, .header, .footer  {
+        margin-left: 0;
+        
+    }
+
+    .about .done, .about .tariff {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about .tariff .item {
+        width: 100%;
+    }
+}

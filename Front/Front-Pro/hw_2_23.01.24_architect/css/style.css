@@ -1,0 +1,243 @@
+@font-face {
+    font-family: Verdana;
+    src: url("../fonts/Verdana.ttf");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Segoe UI;
+    src: url("../fonts/SegoeUI.ttf");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Segoe UI;
+    src: url("../fonts/SegoeUI-Bold.ttf");
+    font-weight: bold;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.main {
+    max-width: 1500px;
+    margin: 0 auto; 
+}
+
+nav {
+    background-color: #fff;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    padding: 8px 16px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 999;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+
+}
+
+nav a {
+    display: block;
+    padding: 8px 16px;
+    text-decoration: none;
+    color: #000;
+    letter-spacing: 4px;
+}
+
+nav a:hover {
+    background-color: #ccc;
+}
+
+.header {
+    max-width: 1500px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.header img {
+    width: 100%;
+    display: block;
+}
+
+.header__title {
+    font-family: Segoe UI;
+    font-weight: 400;
+    font-size: 36px;
+    color: #fff;
+    letter-spacing: 4px;
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.header__title b {
+    font-size: 36px;
+    font-family: Segoe UI;
+    font-weight: bold;
+    color: #fff;
+    
+    letter-spacing: 4px;
+    background-color: #000;
+    opacity: 0.75;
+    padding: 8px 16px;
+}
+
+/* -----   sections    ---- */
+
+/* .houses, .team, .contact {
+    max-width: 1500px;
+    margin: 0 auto;  
+} */
+
+.houses .container, .team .container, .contact .container {
+    padding: 32px 0px;
+}
+
+.houses .container h2, .team .container h2, .contact .container h2 {
+    font-size: 24px;
+    font-family: "Segoe UI",Arial,sans-serif;
+    font-weight: 400;
+    color: #000;
+    margin: 10px 0;
+    padding: 16px 0px;
+    border-bottom: 1px solid #ccc;
+}
+
+.houses__content, .team__content {
+    
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+
+.wrap_house, .wrap_person { 
+    max-width: 360px;
+    /* (1500-20-20-20)/4 =360px */
+    /* width: calc(25%-15px); */
+    padding: 0px 0px;
+    margin-bottom: 16px;
+   
+    position: relative;
+}
+
+.wrap_house > div {
+    background-color: #000;
+    color: #fff;
+    padding: 8px 16px;
+    
+    position: absolute;
+}
+
+.wrap_house > img, .wrap_person > img {
+    width: 100%;
+}
+
+.team .container p, .wrap_person p, .contact .container p {
+    margin: 15px 0;
+    text-align: justify;
+} 
+
+.wrap_person h3 {
+    font-size: 24px;
+    font-family: "Segoe UI",Arial,sans-serif;
+    font-weight: 400;
+    color: #000;
+    margin: 10px 0;
+
+}
+
+.wrap_person .jobtitle {
+ margin: 15px 0;
+ opacity: 0.60;
+
+}
+
+.wrap_person button {
+    border: none;
+    width: 100%;
+    background-color: #f1f1f1;
+    padding: 8px 16px;
+
+}
+
+.wrap_person button:hover {
+    background-color: #cccc;
+    cursor: pointer;
+}
+
+/*    -----  section contact  ------ */
+
+.user_input {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    padding: 8px;
+    margin: 16px 0; 
+    border: 1px solid #ccc;
+    color: #ccc;
+}
+
+input:active {
+    border-radius: 2px;
+    border: 2px solid #000;
+}
+
+.user_input button {
+    border: none;
+    padding: 8px 16px;
+    margin: 16px 0; 
+    background-color: #000;
+    color: #fff;
+    display: inline;
+    align-self: flex-start;
+    /* кпонку по ширине ее контента */
+}
+
+.user_input button:hover {
+    cursor: pointer;
+    background-color: #ccc;
+    color: #000;
+    /* ? как сделать всплывающий плэйсхолдер */
+}
+
+.wrap_person > img {
+    filter: grayscale(75%);
+}
+
+footer {
+    background-color: #000;
+    padding: 16px 0;
+}
+
+footer > div, footer > a {
+    margin: 15px 0;
+    color: #fff;
+    text-align: center; 
+}
+
+
+
+
+

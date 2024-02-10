@@ -1,0 +1,28 @@
+   0 pwd
+   1  touch myfirstbashscript.sh
+   2 ls -l /root
+   3 chmod u+x myfirstbashscript.sh
+   4 ls -l /root
+   5 nano  myfirstbashscript.sh
+   6 ./myfirstbashscript.sh
+   7 cat myfirstbashscript.sh
+   8 history > hw281123.txt
+   9 export_file hw281123.txt
+
+
+
+#!/bin/bash
+ 
+# Заведите новую переменную USER и присвойте ей ваше имя в качестве значения
+# Добавьте в скрипт все необходимое, чтобы он
+# Написал дату
+# Поприветствовал Вас по имени (hello $USER!)
+# Написал, из какой директории он работает
+ 
+USER="Elena"
+echo "Hello, $USER!"
+ 
+echo "Today is $(date +'%D')"
+ 
+echo "From directory with love: $(pwd)"
+

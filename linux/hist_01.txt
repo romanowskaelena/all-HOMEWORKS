@@ -1,0 +1,14 @@
+   0 mkdir -p /home/animals
+   1 pwd
+   2 tree home
+   3 mkdir /home/animals
+   4 tree /home
+   5 mkdir /home/animals/dogs /home/animals/cats /home/animals/fish /home/humans
+   6 tree /home
+   7 touch /home/animals/dogs/pluto /home/animals/cats/garfield /home/animals/fish/nemo /tmp/adam /tmp/eva
+   8 tree /home
+   9 mv /tmp/adam /home/humans/
+  10 mv /tmp/eva /home/humans
+  11 tree /home
+  12 history
+  13 history > hist_01.txt

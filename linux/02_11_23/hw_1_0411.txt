@@ -1,0 +1,11 @@
+   0 mkdir -p /opt/test/ELENA
+   1 cd /opt/test/ELENA
+   2 touch file.txt
+   3 tree /opt
+   4 mv /opt/test/ELENA/file.txt /tmp/Elena.txt
+   5 tree /tmp
+   6 rm /opt/test/ELENA/file.txt
+   7 tree /test
+   8 tree /opt
+   9 history
+  10 history > hist_0411.txt

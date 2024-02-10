@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+    background-color: rgb(229, 193, 209);
+}
+
+img {
+    height: 14px;
+    width: 14px;
+    margin: 5px 5px 0 5px;
+    position: absolute;
+    top: 21px;
+    right: 21px;
+
+}
+
+
+.main_block {
+    flex-wrap: wrap;
+    display: flex;
+    margin: 100px auto;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    height: 426px;
+    width: 420px;
+    box-shadow: 0px 20px 32px 0 rgb(67, 66, 66);
+    position: relative;
+}
+
+.content {
+    width: 388px;
+    height: 370px;
+    padding: 0px 16px 16px 16px;
+    margin: 40px 16px 16px 16px;
+    font-family: 'Nunito', sans-serif;
+}
+
+h2 {
+    font-size: 28px;
+    font-weight: 800;
+
+}
+
+ .input_block, .buttons_block {
+    display: flex;
+    flex-direction: column;
+    margin: 24px 16px 0px 16px;
+ }
+
+ input {
+    padding: 14px 0 14px 16px;
+    border: 1px solid gray;
+    border-radius: 12px;
+ }
+
+ input:focus {
+    outline: none;
+    border: 1px solid #FFE44D;
+ }
+ 
+ input, button {
+    margin-bottom: 8px ;
+    height: 48px;
+ }
+
+p {
+    margin: 16px 16px 0 16px;
+    font-size: 12px;
+    color: gray;  
+}
+ 
+button {
+    border: 1px solid gray;
+    border-radius: 55px;
+    font-weight: 700;
+    background-color: transparent;
+} 
+
+button:first-child {
+    background-color: #FFE44D;
+    border: none;
+}
+/*осталось  проверить все */
+
+
+ 

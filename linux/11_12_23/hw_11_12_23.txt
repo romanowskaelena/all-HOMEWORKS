@@ -1,0 +1,26 @@
+   0 nano /tmp/script.sh
+   1 ls -l /tmp/
+   2 chmod u+x /tmp/script.sh
+   3 ls -l /tmp/script.sh
+   4 history
+
+  
+====script.sh====
+
+#!/bin/bash
+ 
+echo "hello"
+ 
+        for i in {1..10}
+         do
+        touch /tmp/output.txt
+	date >> /tmp/output.txt
+        done
+ 
+15 * * * * /tmp/script.sh 
+
+==================
+ 
+ 
+ 
+ 
