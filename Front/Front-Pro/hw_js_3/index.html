@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body>
+<p>--- задание1 ---</p>
+
+<div class="container">
+
+    <input class="input" type="text">
+    <button onclick="calculateSquare()">get square</button>
+    <h2 class="square-result"></h2>
+    <button onclick="checkEvenOdd()">check Even/Odd</button>
+    <h2 class="even-odd"></h2>
+
+</div>
+
+<p>--- задание2 ---</p>
+
+<div class="gallery">
+
+    <img src="./images/imresizer-1708635761319.jpg" alt="" onclick="zoom()">
+
+</div>
+
+<p>--- задание3 ---</p>
+
+<div class="edu">
+    <h3>Выберете курс</h3>
+
+    <label for="Frontend">Frontend</label>
+    <select name="Frontend" id="Frontend" class="cours">
+        
+        <option value="1000">JavaScript</option>
+        <option value="1000">HTML</option>
+        <option value="0">none</option>
+         
+        <input class="frontInput" type="text" placeholder="введите количество">
+    </select>
+
+    <label for="Backend">Backend</label>
+    <select name="Backend" id="Backend" class="cours">
+        
+        <option value="1500">PHP</option>
+        <option value="1500">JAVA</option>
+        <option value="0">none</option>
+         
+        <input class="backInput" type="text" placeholder="введите количество">
+    </select>
+
+    <label for="Design">Design</label>
+    <select name="Design" id="Design" class="cours">
+        
+        <option value="500">Photoshop</option>
+        <option value="500">Lightroom</option>
+        <option value="0">none</option>
+         
+        <input class="desInput" type="text" placeholder="введите количество">
+    </select>
+
+    <button class="resultSum" onclick="getSum()">Расчитать стоимость</button>
+    <h2 class="sumCourse"></h2>
+    <h3 class="finalPrice"></h3>
+</div>
+  
+    
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
