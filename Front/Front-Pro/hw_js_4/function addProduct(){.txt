@@ -1,0 +1,17 @@
+function addProduct(){
+   
+    let idInput = Date.now();
+    let titleInput = document.querySelector(".item-title").value;
+    let imageInput = document.querySelector(".item-image").value;
+    let priceInput = document.querySelector(".item-price").value;
+
+    products.push([idInput,titleInput,imageInput,priceInput]);
+
+    createProducts();  
+
+    document.querySelector(".item-title").value = "";
+    document.querySelector(".item-image").value = "";
+    document.querySelector(".item-price").value = "";
+}
+
+document.querySelector(".btn-add").onclick = addProduct;
