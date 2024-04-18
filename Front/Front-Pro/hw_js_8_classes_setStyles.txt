@@ -1,0 +1,53 @@
+// // задание
+// Мы создаем базовый класс Shape, который представляет общие свойства и методы для всех фигур.
+// Дочерние классы Circle и Rectangle наследуют класс Shape и расширяют его функциональность для отображения конкретных фигур
+
+class Shape {
+    constructor(className) {
+        this.element = document.createElement('div')
+        this.element.classList.add('shape', className) // 'circle'
+    }
+
+    render(){
+        document.body.append(this.element)
+    }
+
+    setStyle(styles){
+        for (let key in styles) {
+            this.element.style[key] =  styles[key];
+        }
+        console.log(styles);    
+    }
+}
+
+
+class Circle extends Shape {
+    constructor() {
+        super('circle') // передает это в родительский конструктор и возвращается
+    }
+}
+
+let circle2 = new Circle();
+circle2.render();
+circle2.setStyle(
+    {
+    background: 'orange',
+    width: '350px',
+    height: '350px'
+})
+
+
+class Rectangle extends Shape {
+    constructor() {
+        super('rectangle')
+    }
+}
+
+let rec2 = new Rectangle();
+rec2.render();
+rec2.setStyle(
+    {
+    border: '5px solid black',
+    height: '200px'
+    }
+)
