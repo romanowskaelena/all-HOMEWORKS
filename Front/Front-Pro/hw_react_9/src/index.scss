@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "PT Sans", sans-serif;;
+  }
+
+  $text-color: #514f4f;
+  $bg-color: #eeeeee;
+  
+ 
+  h5{
+    color: $text-color;
+    margin-bottom: 24px;
+  }
+
+  .header{
+    max-width: 1600px;
+    background-color: $bg-color;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 2px 2px 5px rgb(60, 60, 60, 50%);;
+
+    &__item, &__icon{
+      padding: 12px 0 12px 100px;
+      font-size: 16px;
+      font-weight: bold;
+      color: $text-color;
+    }
+    &__icon{
+      padding: 12px 100px 12px 0;
+    }
+
+  }
+
+  .main{
+    background-color: $bg-color;
+    margin-top: 5px;
+    max-width: 1600px;
+    
+    .main__container{
+      padding: 30px 100px 30px 100px;
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+      
+      aside{
+        h2{
+          font-size: 32px;
+          margin-bottom: 24px;
+        }
+        ul{
+          display: flex;
+          flex-direction: column;
+          gap: 16px;
+         
+          li{
+            list-style: none;
+            color: $text-color;
+          }
+          li:hover{
+            cursor: pointer;
+            text-decoration: underline;
+            font-weight: bold;
+          }
+        }
+      }
+
+      .content-wrapper{
+        display: flex;
+        flex-direction: column;
+        width: 100% ;
+
+        .drop-container {
+          
+          margin-bottom: 24px;
+          align-self: flex-end;
+
+          .dropdown {
+          max-width: 270px;
+          width: 100%;
+         
+          &__label {
+            display: flex;
+            justify-content: space-between;
+            color: $text-color;;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 8px 16px;
+          }
+          &__content {
+            padding: 6px 0;
+            ul {
+              list-style: none;
+              border: 1px solid #ccc;
+              border-radius: 3px;
+              li {
+                padding: 8px 16px;
+                &:hover {
+                  background-color: #eeeeee;
+                }
+              }
+            }
+          }
+        }
+        }
+      
+        .content{
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);;
+          grid-gap: 20px;
+          justify-content: space-between;
+
+          .content_item{
+            background-color: white;
+            background-color: white;
+            padding: 5px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            img{
+              display: block;
+              width: 100%;
+              height: 200px;
+              object-fit: contain;
+            }
+            p{
+              font-size: 14px;
+              }
+            span{
+              font-weight: bold;
+              }
+          }
+        }
+      
+      }
+
+    }
+
+  }
+  
