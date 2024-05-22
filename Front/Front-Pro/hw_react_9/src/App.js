@@ -1,13 +1,12 @@
 import React from 'react'
-import Header from './componets/Header';
-import Main from './componets/Main';
+import Header from './componets/Header.jsx';
+import Main from './componets/Main.jsx';
 
 
 const App = () => {
 
   return (
     <>
-      <h5>Каталог</h5>
       <Header />
       <Main />
     </>

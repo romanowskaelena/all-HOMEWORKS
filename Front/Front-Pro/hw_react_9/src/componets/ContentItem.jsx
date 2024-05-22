@@ -1,12 +1,21 @@
 import React from "react";
+import { CiStar } from "react-icons/ci";
+import { CiShoppingCart } from "react-icons/ci";
+
+
 
 
 const ContentItem = ({title, price, image}) => {
 
     return(
     <div className="content_item">
-                     
-        <img src={image}></img>
+
+        <div className="content_item__image">  
+            <CiStar className="content_item__icon"/>
+            <img src={image}></img>
+            <CiShoppingCart className="content_item__icon"/>
+        </div> 
+
         <p>{title}</p>
         <span>{price} $</span>  
 

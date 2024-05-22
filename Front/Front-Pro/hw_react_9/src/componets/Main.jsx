@@ -6,7 +6,6 @@ import ContentItem from "./ContentItem"
 
 
 
-
 const Main = ()=> {
 
 // массив для DropMenu
@@ -29,6 +28,7 @@ const [dropMenu, setSort] = useState(
       }
     ]
   );
+
   
 // ф-ция DropMenu
 const handleSort = (marker) => {
@@ -40,6 +40,7 @@ const handleSort = (marker) => {
   
       setSort(updateSort) 
       } //setSort- устанавливает новое значение updateSort = перерисовкa компонента.  используется хук useState
+ 
       
 // Массив товаров "Рюкзаки"
 const backPacks = [ 
@@ -105,8 +106,8 @@ const backPacks = [
 },
 ];  
 
-return(
-<div className="main">
+return (
+<main className="main">
     <div className='main__container'>
 
       <Aside />
@@ -120,14 +121,14 @@ return(
 
             <div className="content">
                 
-                <ContentItem 
-                image='example'
-                title='example'
-                price='example'
-                />
+                {/* <ContentItem 
+                  image='https://www.freecodecamp.org/news/content/images/2021/08/imgTag.png'
+                  title='example'
+                  price='example'
+                /> */}
                
                 {
-                  backPacks.map(backPack => (
+                  backPacks && backPacks.map(backPack => (
                     <ContentItem
                         title={backPack.title}
                         price={backPack.price}
@@ -141,7 +142,7 @@ return(
        </div>
     
     </div>
-</div>
+</main>
     )
 }
 
