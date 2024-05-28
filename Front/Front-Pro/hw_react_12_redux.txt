@@ -1,0 +1,71 @@
+получение одного элемента ProductSingle на отдельной странице с помощью Redux
+
+//в  App.jsx
+
+был создан Новый Роут
+<Route path="/product/:productId" element={<ProductSingle />}/>
+
+// в Actions 
+создан новый action
+
+export const getSingleProduct = (payload) => ({ 
+    type: GET_SINGLE_PRODUCT, 
+    payload 
+});
+
+// в Редьюсере
+ добавлен новый кэйс 
+
+case GET_SINGLE_PRODUCT:
+            return { ...state, products: state.data.filter(item => item.id === payload)}
+
+также импорт его
+
+
+// в типах добавлен новый тип
+export const GET_SINGLE_PRODUCT = "GET_SINGLE_PRODUCT";
+
+
+// в компоненте ProductSingle.jsx
+
+const ProductSingle = () => {
+
+    const dispatch = useDispatch();
+
+    const productSingle = useSelector(state => state.products);
+
+    const { productId } = useParams();
+
+    useEffect( () => {
+        dispatch(getSingleProduct(productId));
+    },[productId]);
+
+    return (
+        <>
+        <div>ProductSingle {productId}</div>
+
+        <div className="products">
+        {
+            productSingle && productSingle.map(item => (
+                <div className="item" key={item.id}>
+                    <img src={item.image} alt={item.title} className="item__image" />
+
+                    <div className='item__content'>
+                        <h2 className='item__title'>{item.title}</h2>
+                        <p className='item__subtitle'>{item.description}</p>
+                    </div>
+
+                    <div className='item__footer'>
+                        <span className='item__price'>$ {item.price}</span>
+
+                        <button className='btn btn-small' onClick={ () => dispatch(addProductToCart(item.id))}><CiShoppingBasket className='btn-icon' /></button>
+                    </div>
+                </div>
+            ))
+        }
+    </div>
+    </>
+    )
+}
+
+export default ProductSingle
